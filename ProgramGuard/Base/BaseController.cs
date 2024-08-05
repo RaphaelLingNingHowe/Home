@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProgramGuard.Data;
 using ProgramGuard.Enums;
-using ProgramGuard.Interface.Repository;
 using ProgramGuard.Models;
+using System.Security.Claims;
 
 namespace ProgramGuard.Base
 {
@@ -15,32 +16,35 @@ namespace ProgramGuard.Base
         protected OPERATE_PRIVILEGE _operatePrivilege = OPERATE_PRIVILEGE.UNKNOWN;
         protected readonly ProgramGuardContext _context;
         protected readonly ILogger<BaseController> _logger;
-        protected readonly IUserRepository _userRepository;
-        protected readonly IOperateLogRepository _operateLogRepository;
-
-        public BaseController(ProgramGuardContext context, ILogger<BaseController> logger, IUserRepository userRepository, IOperateLogRepository operateLogRepository)
+        public BaseController(ProgramGuardContext context, ILogger<BaseController> logger)
         {
             _context = context;
             _logger = logger;
-            _userRepository = userRepository;
-            _operateLogRepository = operateLogRepository;
+        }
+
+        protected async Task<User?> GetUserAsync(ClaimsPrincipal principal)
+        {
+            var account = principal.FindFirstValue(ClaimTypes.NameIdentifier);
+            return account != null ? await _context.Users.FirstOrDefaultAsync(u => u.Account == account) : null;
         }
 
         protected async Task LogActionAsync(ACTION action, string comment = "")
         {
-            var currentUser = await _userRepository.GetUserAsync(User);
-            if (currentUser == null)
+            var user = await GetUserAsync(HttpContext.User);
+            if (user == null)
             {
-                _logger.LogWarning("Current user could not be found for logging.");
+                _logger.LogWarning("無法記錄操作 '{Action}'，因為找不到用戶。註釋：'{Comment}'", action, comment);
                 return;
             }
+
             OperateLog operateLog = new()
             {
-                User = currentUser,
+                User = user,
                 Action = action,
                 Comment = comment,
             };
-            await _operateLogRepository.AddAsync(operateLog);
+            await _context.AddAsync(operateLog);
+            await _context.SaveChangesAsync();
         }
 
         protected VISIBLE_PRIVILEGE VisiblePrivilege

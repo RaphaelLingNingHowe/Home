@@ -9,6 +9,6 @@
         public bool IsEnabled { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsLocked { get; set; }
-        public DateTime LockoutEnd { get; set; }
+        public DateTime? LockoutEnd { get; set; }
     }
 }

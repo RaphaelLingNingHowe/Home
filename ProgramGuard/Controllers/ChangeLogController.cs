@@ -1,65 +1,74 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Extensions;
 using ProgramGuard.Base;
+using ProgramGuard.Config;
 using ProgramGuard.Data;
 using ProgramGuard.Dtos.ChangeLog;
-using ProgramGuard.Interface.Repository;
-using ProgramGuard.Models;
+using ProgramGuard.Enums;
+using ProgramGuard.Helper;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProgramGuard.Controllers
 {
     public class ChangeLogController : BaseController
     {
-        private readonly IChangeLogRepository _changeLogRepository;
-        public ChangeLogController(ProgramGuardContext context, ILogger<BaseController> logger, IUserRepository userRepository, IOperateLogRepository operateLogRepository, IChangeLogRepository changeLogRepository) : base(context, logger, userRepository, operateLogRepository)
+        private readonly IOptions<TimeRangeSettings> _options;
+        public ChangeLogController(ProgramGuardContext context, ILogger<BaseController> logger, IOptions<TimeRangeSettings> options) : base(context, logger)
         {
-            _changeLogRepository = changeLogRepository;
+            _options = options;
         }
-
         [HttpGet("query")]
-        public async Task<ActionResult<IEnumerable<GetChangeLogDto>>> GetChangeLogsByQueryAsync([FromQuery] DateTime? startTime, DateTime? endTime, string fileName, bool? isConfirmed)
+        public async Task<IActionResult> GetChangeLogsByQueryAsync([FromQuery] DateTime? startTime, DateTime? endTime, string fileName, bool? unConfirmed)
         {
-            if (!startTime.HasValue && !endTime.HasValue && string.IsNullOrEmpty(fileName) && !isConfirmed.HasValue)
+            if (!startTime.HasValue && !endTime.HasValue && string.IsNullOrEmpty(fileName) && !unConfirmed.HasValue)
             {
                 return BadRequest("請提供至少一個查詢條件");
             }
-            if (startTime.HasValue && endTime.HasValue && (endTime.Value - startTime.Value).TotalDays > 7)
+            if (startTime.HasValue && endTime.HasValue)
             {
-                return BadRequest("日期範圍不能超過 7 天");
+                if (!startTime.HasValue && !endTime.HasValue)
+                {
+                    return BadRequest("請提供查詢時間");
+                }
+                if (endTime < startTime)
+                {
+                    return BadRequest("結束時間不能早於開始時間");
+                }
+                var timeRange = _options.Value.MaxRangeInDays;
+                if ((endTime - startTime).Value.TotalDays > timeRange)
+                {
+                    return BadRequest($"時間範圍不能超過{timeRange}天");
+                }
             }
-            var changeLogs = await _changeLogRepository.GetByQueryAsync(startTime, endTime, fileName, isConfirmed);
-            var changeLogDtos = changeLogs.Select(c => new GetChangeLogDto
+            var query = _context.ChangeLogs
+                .AsQueryable();
+            if (startTime.HasValue && endTime.HasValue)
+            {
+                query = query.Where(c => c.Timestamp >= startTime && c.Timestamp <= endTime);
+            }
+            if (!string.IsNullOrEmpty(fileName))
+            {
+                query = query.Where(c => c.FileList.Name.Contains(fileName));
+            }
+            if (unConfirmed == true)
+            {
+                query = query.Where(c => !c.IsConfirmed);
+            }
+            var result = await query.Select(c => new GetChangeLogDto
             {
                 Id = c.Id,
                 FileName = c.FileList.Name,
                 Timestamp = c.Timestamp,
-                ChangeType = c.ChangeType,
+                ChangeType = EnumHelper.GetEnumDescription(c.ChangeType),
                 ChangeDetail = c.ChangeDetail,
                 UserName = c.User.Name,
                 IsConfirmed = c.IsConfirmed,
                 ConfirmedAt = c.ConfirmedAt,
-                DigitalSIgnature = c.DigitalSIgnature
-            });
-            return Ok(changeLogs);
-        }
-
-        [HttpPatch("{id}")]
-        public async Task<ActionResult> UpdateChangeLogAsync(int id)
-        {
-            var changeLog = await _changeLogRepository.GetByIdAsync(id);
-            if (changeLog == null)
-            {
-                return NotFound();
-            }
-            var currentUser = await _userRepository.GetUserAsync(User);
-            if (currentUser == null)
-            {
-                _logger.LogWarning("Current user could not be found for logging.");
-                return Unauthorized();
-            }
-            changeLog.IsConfirmed = true;
-            changeLog.UserId = currentUser.Id;
-            await _changeLogRepository.UpdateAsync(changeLog);
-            return NoContent();
+                DigitalSignature = c.DigitalSignature
+            }).ToListAsync();
+            return Ok(result);
         }
     }
 }

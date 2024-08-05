@@ -12,11 +12,11 @@ namespace ProgramGuard.Models
         [ForeignKey("PrivilegeRule")]
         public int PrivilegeRuleId { get; set; }
         public PrivilegeRule PrivilegeRule { get; set; } = null!;
-        public DateTime LastPasswordChangedDate { get; set; } = DateTime.Now;
+        public DateTime LastPasswordChanged { get; set; } = DateTime.Now;
         public bool IsEnabled { get; set; } = true;
         public bool IsDeleted { get; set; }
         public bool IsLocked { get; set; }
-        public DateTime LockoutEnd { get; set; }
+        public DateTime? LockoutEnd { get; set; }
         public byte AccessFailedCount { get; set; }
 
     }

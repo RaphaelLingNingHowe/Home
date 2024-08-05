@@ -1,166 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\ProgramGuard\\ProgramGuard\\",
+  "WorkspaceRootPath": "D:\\Home\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\config\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\config\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\config\\passwordpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\config\\passwordpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\config\\workersettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\config\\workersettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\config\\lockoutsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\config\\lockoutsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\config\\timerangesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\config\\timerangesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\config\\certificatesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\config\\certificatesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\controllers\\filelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\filelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\filelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\repository\\ioperatelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\repository\\ioperatelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\repository\\ifilelistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\repository\\ifilelistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\repository\\ichangelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\repository\\ichangelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\services\\passwordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\services\\passwordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\dtos\\user\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\user\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\controllers\\changelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\changelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\changelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\dtos\\filelist\\createfilelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\filelist\\createfilelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\helper\\enumhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\helper\\enumhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\enums\\change_type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\enums\\change_type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\models\\changelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\helper\\digitalsignaturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\helper\\digitalsignaturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\models\\changelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\models\\changelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\dtos\\filelist\\getfilelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\filelist\\getfilelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\controllers\\operatelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\operatelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\repository\\operatelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\repository\\operatelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\repository\\changelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\repository\\changelogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\dtos\\user\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\user\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\service\\ipasswordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\service\\ipasswordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\interface\\service\\ifileverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\interface\\service\\ifileverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\dtos\\filelist\\updatefilelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\filelist\\updatefilelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\models\\operatelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\models\\operatelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\projects\\programguard\\programguard\\programguard\\repository\\filelistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\repository\\filelistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -170,488 +42,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ExceptionHandlingMiddleware.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "RelativeToolTip": "ProgramGuard\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwCYAAAAsAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Program.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Program.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Program.cs",
+              "RelativeToolTip": "ProgramGuard\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T12:16:12.071Z",
+              "WhenOpened": "2024-08-05T09:29:48.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ProgramGuard\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T09:28:42.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnumHelper.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Helper\\EnumHelper.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Helper\\EnumHelper.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Helper\\EnumHelper.cs",
+              "RelativeToolTip": "ProgramGuard\\Helper\\EnumHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T09:14:17.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LockoutSettings.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\LockoutSettings.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Config\\LockoutSettings.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\LockoutSettings.cs",
-              "RelativeToolTip": "ProgramGuard\\Config\\LockoutSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Title": "CHANGE_TYPE.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Enums\\CHANGE_TYPE.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Enums\\CHANGE_TYPE.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Enums\\CHANGE_TYPE.cs",
+              "RelativeToolTip": "ProgramGuard\\Enums\\CHANGE_TYPE.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:43:32.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WorkerSettings.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\WorkerSettings.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Config\\WorkerSettings.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\WorkerSettings.cs",
-              "RelativeToolTip": "ProgramGuard\\Config\\WorkerSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:40:18.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TimeRangeSettings.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\TimeRangeSettings.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Config\\TimeRangeSettings.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\TimeRangeSettings.cs",
-              "RelativeToolTip": "ProgramGuard\\Config\\TimeRangeSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:39:58.566Z"
+              "WhenOpened": "2024-08-05T09:06:50.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PasswordPolicy.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\PasswordPolicy.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Config\\PasswordPolicy.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\PasswordPolicy.cs",
-              "RelativeToolTip": "ProgramGuard\\Config\\PasswordPolicy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
+              "Title": "ChangeLogController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\ChangeLogController.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\ChangeLogController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\ChangeLogController.cs",
+              "RelativeToolTip": "ProgramGuard\\Controllers\\ChangeLogController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwBIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:38:48.47Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppSettings.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\AppSettings.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Config\\AppSettings.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\AppSettings.cs",
-              "RelativeToolTip": "ProgramGuard\\Config\\AppSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:37:59.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\appsettings.json",
-              "RelativeDocumentMoniker": "ProgramGuard\\appsettings.json",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\appsettings.json",
-              "RelativeToolTip": "ProgramGuard\\appsettings.json",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-03T01:41:47.985Z"
+              "WhenOpened": "2024-08-05T08:45:38.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Program.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Program.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Program.cs",
-              "RelativeToolTip": "ProgramGuard\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAACUAAABfAAAA",
+              "Title": "DigitalSignatureHelper.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
+              "RelativeToolTip": "ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T01:39:08.593Z"
+              "WhenOpened": "2024-08-05T08:35:38.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Services\\UserService.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Services\\UserService.cs",
-              "RelativeToolTip": "ProgramGuard\\Services\\UserService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAIwDcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T05:02:48.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CertificateSettings.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\CertificateSettings.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Config\\CertificateSettings.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Config\\CertificateSettings.cs",
-              "RelativeToolTip": "ProgramGuard\\Config\\CertificateSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T13:26:53.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ProgramGuard\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:29:08.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Repository\\IRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Repository\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T00:48:18.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Repository\\IUserRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IUserRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Repository\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T00:52:33.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Service\\IUserService.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Service\\IUserService.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Service\\IUserService.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Service\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T05:03:03.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "FileListController.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\FileListController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\FileListController.cs",
               "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\FileListController.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\FileListController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\FileListController.cs",
               "RelativeToolTip": "ProgramGuard\\Controllers\\FileListController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwAwAAAAFAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAFoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T14:21:11.835Z"
-            },
+              "WhenOpened": "2024-08-05T08:33:25.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "69cf7556-93ae-439f-a883-cf28270c40b4",
+        "Display": 0,
+        "X": 177,
+        "Y": 111,
+        "Width": 1532,
+        "Height": 799,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IOperateLogRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IOperateLogRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Repository\\IOperateLogRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IOperateLogRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Repository\\IOperateLogRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAYAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T02:03:46.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IFileListRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IFileListRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Repository\\IFileListRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IFileListRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Repository\\IFileListRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAQAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T02:15:15.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IChangeLogRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IChangeLogRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Repository\\IChangeLogRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Repository\\IChangeLogRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Repository\\IChangeLogRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T12:41:36.748Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Repository\\UserRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T00:52:46.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PasswordHasherService.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Services\\PasswordHasherService.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Services\\PasswordHasherService.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Services\\PasswordHasherService.cs",
-              "RelativeToolTip": "ProgramGuard\\Services\\PasswordHasherService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:04:05.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Services\\TokenService.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Services\\TokenService.cs",
-              "RelativeToolTip": "ProgramGuard\\Services\\TokenService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T01:43:27.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
-              "RelativeToolTip": "ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T04:40:58.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ChangeLogController.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\ChangeLogController.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\ChangeLogController.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\ChangeLogController.cs",
-              "RelativeToolTip": "ProgramGuard\\Controllers\\ChangeLogController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T14:04:15.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 7,
               "Title": "ChangeLog.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Models\\ChangeLog.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Models\\ChangeLog.cs",
               "RelativeDocumentMoniker": "ProgramGuard\\Models\\ChangeLog.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Models\\ChangeLog.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Models\\ChangeLog.cs",
               "RelativeToolTip": "ProgramGuard\\Models\\ChangeLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T13:33:15.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "GetFileListDto.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\FileList\\GetFileListDto.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\FileList\\GetFileListDto.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\FileList\\GetFileListDto.cs",
-              "RelativeToolTip": "ProgramGuard\\Dtos\\FileList\\GetFileListDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAYAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T03:14:27.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CreateFileListDto.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\FileList\\CreateFileListDto.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\FileList\\CreateFileListDto.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\FileList\\CreateFileListDto.cs",
-              "RelativeToolTip": "ProgramGuard\\Dtos\\FileList\\CreateFileListDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T12:05:42.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "OperateLogController.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\OperateLogController.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\OperateLogController.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\OperateLogController.cs",
-              "RelativeToolTip": "ProgramGuard\\Controllers\\OperateLogController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAADwvwkAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T00:52:33.582Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CreateUserDto.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\User\\CreateUserDto.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\User\\CreateUserDto.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\User\\CreateUserDto.cs",
-              "RelativeToolTip": "ProgramGuard\\Dtos\\User\\CreateUserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T02:26:18.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ProgramGuard\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAF8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T02:22:05.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Repository\\Repository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\Repository.cs",
-              "RelativeToolTip": "ProgramGuard\\Repository\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T00:47:21.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "OperateLogRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\OperateLogRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Repository\\OperateLogRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\OperateLogRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Repository\\OperateLogRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T02:04:29.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ChangeLogRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\ChangeLogRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Repository\\ChangeLogRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\ChangeLogRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Repository\\ChangeLogRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAwwBQAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T12:41:28.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ResetPasswordDto.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\User\\ResetPasswordDto.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\User\\ResetPasswordDto.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\User\\ResetPasswordDto.cs",
-              "RelativeToolTip": "ProgramGuard\\Dtos\\User\\ResetPasswordDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T00:58:20.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IPasswordHasherService.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Service\\IPasswordHasherService.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Service\\IPasswordHasherService.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Service\\IPasswordHasherService.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Service\\IPasswordHasherService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:04:15.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Base\\BaseController.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Base\\BaseController.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Base\\BaseController.cs",
-              "RelativeToolTip": "ProgramGuard\\Base\\BaseController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T14:31:03.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "IFileVerificationService.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Service\\IFileVerificationService.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Interface\\Service\\IFileVerificationService.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Interface\\Service\\IFileVerificationService.cs",
-              "RelativeToolTip": "ProgramGuard\\Interface\\Service\\IFileVerificationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T12:54:29.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "UpdateFileListDto.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\FileList\\UpdateFileListDto.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\FileList\\UpdateFileListDto.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Dtos\\FileList\\UpdateFileListDto.cs",
-              "RelativeToolTip": "ProgramGuard\\Dtos\\FileList\\UpdateFileListDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T13:57:34.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Models\\User.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Models\\User.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Models\\User.cs",
-              "RelativeToolTip": "ProgramGuard\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T02:16:23.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "OperateLog.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Models\\OperateLog.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Models\\OperateLog.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Models\\OperateLog.cs",
-              "RelativeToolTip": "ProgramGuard\\Models\\OperateLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T01:54:44.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "FileListRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\FileListRepository.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Repository\\FileListRepository.cs",
-              "ToolTip": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\Repository\\FileListRepository.cs",
-              "RelativeToolTip": "ProgramGuard\\Repository\\FileListRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T02:15:27.81Z"
+              "WhenOpened": "2024-08-05T08:34:22.893Z",
+              "EditorCaption": ""
             }
           ]
         }

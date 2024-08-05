@@ -1,130 +1,163 @@
-﻿using Microsoft.AspNetCore.Identity.Data;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProgramGuard.Base;
 using ProgramGuard.Data;
+using ProgramGuard.Dtos.FileList;
 using ProgramGuard.Dtos.User;
-using ProgramGuard.Interface.Repository;
-using ProgramGuard.Interface.Service;
+using ProgramGuard.Helper;
 using ProgramGuard.Models;
+using System.Security.Principal;
 
 namespace ProgramGuard.Controllers
 {
     public class UserController : BaseController
     {
-        private readonly IPasswordHasherService _passwordHasherService;
-        public UserController(ProgramGuardContext context, ILogger<BaseController> logger, IUserRepository userRepository, IOperateLogRepository operateLogRepository, IPasswordHasherService passwordHasherService) : base(context, logger, userRepository, operateLogRepository)
+        public UserController(ProgramGuardContext context, ILogger<BaseController> logger) : base(context, logger)
         {
-            _passwordHasherService = passwordHasherService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GetUserDto>>> GetAllUsersAsync()
+        public async Task<IActionResult> GetAlUsersAsync()
         {
-            var users = await _userRepository.GetAllUsersAsync();
-            var userDtos = users.Select(u => new GetUserDto
-            {
-                Id = u.Id,
-                Account = u.Account,
-                Name = u.Name,
-                PrivilegeRuleName = u.PrivilegeRule.Name,
-                IsEnabled = u.IsEnabled,
-                IsDeleted = u.IsDeleted,
-                IsLocked = u.IsLocked,
-                LockoutEnd = u.LockoutEnd
-            });
-            return Ok(userDtos);
+            IEnumerable<GetUserDto> result = await _context.Users
+                        .OrderBy(u => u.Id)
+                        .Select(u => new GetUserDto
+                        {
+                            Id = u.Id,
+                            Account = u.Account,
+                            Name = u.Name,
+                            PrivilegeRuleName = u.PrivilegeRule.Name,
+                            IsEnabled = u.IsEnabled,
+                            IsDeleted = u.IsDeleted,
+                            IsLocked = u.IsLocked,
+                            LockoutEnd = u.LockoutEnd
+                        })
+                        .ToListAsync();
+            return Ok(result);
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateUser([FromBody] CreateUserDto createUserDto)
+        public async Task<IActionResult> CreateUserAsync([FromBody] CreateUserDto createUserDto)
         {
+            if (await _context.Users.AnyAsync(u => u.Account == createUserDto.Account))
+            {
+                return Forbidden($"已有此帳號-[{createUserDto.Account}]");
+            }
             User user = new()
             {
                 Account = createUserDto.Account,
                 Name = createUserDto.Account,
-                Password = createUserDto.Password,
+                Password = PasswordHelper.HashPassword(createUserDto.Password),
                 PrivilegeRuleId = 1
             };
-            await _userRepository.AddAsync(user);
-            return Created();
+            await _context.AddAsync(user);
+            return Created(user.Id);
         }
 
-        [HttpPatch("{id}/privilege")]
-        public async Task<ActionResult> UpdateUserPrivilegeRuleAsync(int id, [FromBody] int privilegeRuleId)
+        [HttpPatch("{account}/privilege")]
+        public async Task<IActionResult> UpdateUserPrivilegeRuleAsync(string account, [FromBody] int privilegeRuleId)
         {
-            var user = await _userRepository.GetByIdAsync(id);
-            if (user == null)
+            if (await _context.Users.SingleOrDefaultAsync(u => u.Account == account) is not User user)
             {
-                return NotFound();
+                return NotFound($"找不到此帳號-[{account}]");
+            }
+            else if (user.IsDeleted)
+            {
+                return Forbidden($"此帳號已刪除-[{user.Account}]");
+            }
+            else if (await _context.PrivilegeRules.FindAsync(privilegeRuleId) is not PrivilegeRule privilegeRule)
+            {
+                return NotFound($"找不到此權限-[{privilegeRuleId}]");
+            }
+            else if (user.PrivilegeRuleId == privilegeRuleId)
+            {
+                return Forbidden($"帳號已有此權限-[{privilegeRule.Name}]");
             }
             user.PrivilegeRuleId = privilegeRuleId;
-            await _userRepository.UpdateAsync(user);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
-        [HttpPatch("{id}/enable")]
-        public async Task<ActionResult> EnableUserAsync(int id)
+        [HttpPatch("{account}/enable")]
+        public async Task<IActionResult> EnableUserAsync(string account)
         {
-            var user = await _userRepository.GetByIdAsync(id);
-            if (user == null)
+            if (await _context.Users.SingleOrDefaultAsync(u => u.Account == account) is not User user)
             {
-                return NotFound();
+                return NotFound($"找不到此帳號-[{account}]");
+            }
+            else if (user.IsDeleted)
+            {
+                return Forbidden($"此帳號已刪除-[{user.Account}]");
             }
             user.IsEnabled = true;
-            await _userRepository.UpdateAsync(user);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
-        [HttpPatch("{id}/disable")]
-        public async Task<ActionResult> DisableUserAsync(int id)
+        [HttpPatch("{account}/disable")]
+        public async Task<IActionResult> DisableUserAsync(string account)
         {
-            var user = await _userRepository.GetByIdAsync(id);
-            if (user == null)
+            if (await _context.Users.SingleOrDefaultAsync(u => u.Account == account) is not User user)
             {
-                return NotFound();
+                return NotFound($"找不到此帳號-[{account}]");
+            }
+            else if (user.IsDeleted)
+            {
+                return Forbidden($"此帳號已刪除-[{user.Account}]");
             }
             user.IsEnabled = false;
-            await _userRepository.UpdateAsync(user);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
-        [HttpPatch("{id}/unlock")]
-        public async Task<ActionResult> UnlockUserAsync(int id)
+        [HttpPatch("{account}/unlock")]
+        public async Task<IActionResult> UnlockUserAsync(string account)
         {
-            var user = await _userRepository.GetByIdAsync(id);
-            if (user == null)
+            if (await _context.Users.SingleOrDefaultAsync(u => u.Account == account) is not User user)
             {
-                return NotFound();
+                return NotFound($"找不到此帳號-[{account}]");
+            }
+            else if (user.IsDeleted)
+            {
+                return Forbidden($"此帳號已刪除-[{user.Account}]");
             }
             user.IsLocked = false;
-            await _userRepository.UpdateAsync(user);
+            user.AccessFailedCount = 0;
+            user.LockoutEnd = null;
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
-        [HttpPatch("{id}/reset-password")]
-        public async Task<ActionResult> ResetPasswordAsync(int id, [FromBody] ResetPasswordDto resetPasswordDto)
+        [HttpPatch("{account}/reset-password")]
+        public async Task<IActionResult> ResetPasswordAsync(string account, [FromBody] ResetPasswordDto resetPasswordDto)
         {
-            var user = await _userRepository.GetByIdAsync(id);
-            if (user == null)
+            if (await _context.Users.SingleOrDefaultAsync(u => u.Account == account) is not User user)
             {
-                return NotFound();
+                return NotFound($"找不到此帳號-[{account}]");
             }
-            user.Password = _passwordHasherService.HashPassword(resetPasswordDto.Password);
-            user.LastPasswordChangedDate = DateTime.UtcNow;
-            await _userRepository.UpdateAsync(user);
+            else if (user.IsDeleted)
+            {
+                return Forbidden($"此帳號已刪除-[{user.Account}]");
+            }
+            user.Password = PasswordHelper.HashPassword(resetPasswordDto.Password);
+            user.LastPasswordChanged = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
+        [HttpDelete("{account}")]
+        public async Task<IActionResult> DeleteUserAsync(string account)
         {
-            var user = await _userRepository.GetByIdAsync(id);
-            if (user == null)
+            if (await _context.Users.SingleOrDefaultAsync(u => u.Account == account) is not User user)
             {
-                return NotFound();
+                return NotFound($"找不到此帳號-[{account}]");
+            }
+            else if (user.IsDeleted)
+            {
+                return Forbidden($"此帳號已刪除-[{user.Account}]");
             }
             user.IsDeleted = true;
-            await _userRepository.UpdateAsync(user);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
     }

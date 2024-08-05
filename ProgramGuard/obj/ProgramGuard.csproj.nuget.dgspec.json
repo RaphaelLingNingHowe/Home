@@ -1,20 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\ProgramGuard.csproj": {}
+    "D:\\Home\\ProgramGuard\\ProgramGuard.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\ProgramGuard.csproj": {
+    "D:\\Home\\ProgramGuard\\ProgramGuard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\ProgramGuard.csproj",
+        "projectUniqueName": "D:\\Home\\ProgramGuard\\ProgramGuard.csproj",
         "projectName": "ProgramGuard",
-        "projectPath": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\ProgramGuard.csproj",
-        "packagesPath": "C:\\Users\\Raphael\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ProgramGuard\\ProgramGuard\\ProgramGuard\\obj\\",
+        "projectPath": "D:\\Home\\ProgramGuard\\ProgramGuard.csproj",
+        "packagesPath": "C:\\Users\\raphael.lin\\.nuget\\packages\\",
+        "outputPath": "D:\\Home\\ProgramGuard\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Raphael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\raphael.lin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +30,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -98,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
