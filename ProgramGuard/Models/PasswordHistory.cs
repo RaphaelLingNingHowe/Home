@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProgramGuard.Models
 {
@@ -9,6 +10,8 @@ namespace ProgramGuard.Models
         [ForeignKey("User")]
         public int UserId { get; set; }
         public User User { get; set; } = null!;
+
+        [StringLength(128, ErrorMessage = "超過可輸入上限(128)")]
         public string Password { get; set; } = string.Empty;
         public DateTime Timestamp { get; set; } = DateTime.Now;
     }

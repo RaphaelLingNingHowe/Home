@@ -8,6 +8,7 @@ using ProgramGuard.Data;
 using ProgramGuard.Dtos.ChangeLog;
 using ProgramGuard.Enums;
 using ProgramGuard.Helper;
+using ProgramGuard.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProgramGuard.Controllers
@@ -19,6 +20,7 @@ namespace ProgramGuard.Controllers
         {
             _options = options;
         }
+
         [HttpGet("query")]
         public async Task<IActionResult> GetChangeLogsByQueryAsync([FromQuery] DateTime? startTime, DateTime? endTime, string fileName, bool? unConfirmed)
         {
@@ -69,6 +71,28 @@ namespace ProgramGuard.Controllers
                 DigitalSignature = c.DigitalSignature
             }).ToListAsync();
             return Ok(result);
+        }
+
+        [HttpPatch("{id}/confirm")]
+        public async Task<IActionResult> UpdateUserPrivilegeRuleAsync(int id)
+        {
+            if (await _context.ChangeLogs.FindAsync(id) is not ChangeLog changeLog)
+            {
+                return NotFound($"找不到此異動記錄-[{id}]");
+            }
+            else if (changeLog.IsConfirmed)
+            {
+                return Forbidden("此異動記錄已審核");
+            }
+            if (await GetUserAsync(User) is not User user)
+            {
+                return NotFound("找不到帳號");
+            }
+            changeLog.UserId = user.Id;
+            changeLog.IsConfirmed = true;
+            changeLog.ConfirmedAt = DateTime.Now;
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
     }
 }

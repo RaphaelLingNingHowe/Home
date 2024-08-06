@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgramGuard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+992f4733ba786bcbc0ba2e2e79c37f3bfd5e1dba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a635421f89d1204a12400e59bcefd3d491627b6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgramGuard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgramGuard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

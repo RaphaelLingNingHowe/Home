@@ -7,6 +7,8 @@ using ProgramGuard.Data;
 using ProgramGuard.Dtos.ChangeLog;
 using ProgramGuard.Dtos.FileList;
 using ProgramGuard.Dtos.OperateLog;
+using ProgramGuard.Enums;
+using ProgramGuard.Helper;
 using ProgramGuard.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -40,6 +42,13 @@ namespace ProgramGuard.Controllers
                         })
                         .ToListAsync();
             return Ok(result);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> LogActionAsync(LogActionDto logActionDto)
+        {
+            await LogActionAsync(logActionDto.Action);
+            return Created();
         }
     }
 }

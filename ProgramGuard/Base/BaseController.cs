@@ -30,10 +30,9 @@ namespace ProgramGuard.Base
 
         protected async Task LogActionAsync(ACTION action, string comment = "")
         {
-            var user = await GetUserAsync(HttpContext.User);
-            if (user == null)
+            if (await GetUserAsync(User) is not User user)
             {
-                _logger.LogWarning("無法記錄操作 '{Action}'，因為找不到用戶。註釋：'{Comment}'", action, comment);
+                _logger.LogError($"記錄'{action}'操作失敗，因為找不到帳號，備註：'{comment}'");
                 return;
             }
 

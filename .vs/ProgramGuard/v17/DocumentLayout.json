@@ -3,32 +3,72 @@
   "WorkspaceRootPath": "D:\\Home\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\data\\programguardcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\data\\programguardcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\middlewares\\privilegemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\middlewares\\privilegemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\enums\\operate_privilege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\enums\\operate_privilege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\dtos\\auth\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\auth\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\filelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\filelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\operatelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\operatelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\changelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\changelogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\helper\\enumhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\helper\\enumhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\dtos\\auth\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\auth\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\enums\\change_type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\enums\\change_type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\helper\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\helper\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\helper\\digitalsignaturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\helper\\digitalsignaturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\dtos\\changelog\\logactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\changelog\\logactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\config\\lockoutsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\config\\lockoutsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\controllers\\filelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|solutionrelative:programguard\\controllers\\filelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816A5FA3-D9A4-4DCE-A920-7A468D8BB013}|ProgramGuard\\ProgramGuard.csproj|d:\\home\\programguard\\models\\changelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,101 +82,192 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 18,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OPERATE_PRIVILEGE.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Enums\\OPERATE_PRIVILEGE.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Enums\\OPERATE_PRIVILEGE.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Enums\\OPERATE_PRIVILEGE.cs",
+              "RelativeToolTip": "ProgramGuard\\Enums\\OPERATE_PRIVILEGE.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAADwvxEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T03:15:41.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrivilegeMiddleware.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Middlewares\\PrivilegeMiddleware.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Middlewares\\PrivilegeMiddleware.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Middlewares\\PrivilegeMiddleware.cs",
+              "RelativeToolTip": "ProgramGuard\\Middlewares\\PrivilegeMiddleware.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAIAwwB0AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T04:57:13.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Dtos\\Auth\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\Auth\\LoginResponseDto.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Dtos\\Auth\\LoginResponseDto.cs",
+              "RelativeToolTip": "ProgramGuard\\Dtos\\Auth\\LoginResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T03:07:50.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChangePasswordDto.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Dtos\\Auth\\ChangePasswordDto.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\Auth\\ChangePasswordDto.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Dtos\\Auth\\ChangePasswordDto.cs",
+              "RelativeToolTip": "ProgramGuard\\Dtos\\Auth\\ChangePasswordDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:37:06.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Helper\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Helper\\JwtHelper.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Helper\\JwtHelper.cs",
+              "RelativeToolTip": "ProgramGuard\\Helper\\JwtHelper.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAuwDQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:27:40.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Models\\User.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Models\\User.cs",
+              "RelativeToolTip": "ProgramGuard\\Models\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:16:43.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LockoutSettings.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Config\\LockoutSettings.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Config\\LockoutSettings.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Config\\LockoutSettings.cs",
+              "RelativeToolTip": "ProgramGuard\\Config\\LockoutSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:52:21.183Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Program.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Program.cs",
-              "ToolTip": "D:\\Home\\ProgramGuard\\Program.cs",
-              "RelativeToolTip": "ProgramGuard\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T09:29:48.774Z",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\appsettings.json",
+              "RelativeDocumentMoniker": "ProgramGuard\\appsettings.json",
+              "ToolTip": "D:\\Home\\ProgramGuard\\appsettings.json",
+              "RelativeToolTip": "ProgramGuard\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-06T01:51:43.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ProgramGuard\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAByAAAA",
+              "DocumentIndex": 13,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
+              "RelativeToolTip": "ProgramGuard\\Dtos\\Auth\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T09:28:42.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnumHelper.cs",
-              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Helper\\EnumHelper.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Helper\\EnumHelper.cs",
-              "ToolTip": "D:\\Home\\ProgramGuard\\Helper\\EnumHelper.cs",
-              "RelativeToolTip": "ProgramGuard\\Helper\\EnumHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T09:14:17.406Z",
+              "WhenOpened": "2024-08-06T01:27:19.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CHANGE_TYPE.cs",
-              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Enums\\CHANGE_TYPE.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Enums\\CHANGE_TYPE.cs",
-              "ToolTip": "D:\\Home\\ProgramGuard\\Enums\\CHANGE_TYPE.cs",
-              "RelativeToolTip": "ProgramGuard\\Enums\\CHANGE_TYPE.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ProgramGuard\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAvwHMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T09:06:50.379Z",
+              "WhenOpened": "2024-08-06T01:26:34.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
+              "Title": "LogActionDto.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Dtos\\ChangeLog\\LogActionDto.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Dtos\\ChangeLog\\LogActionDto.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Dtos\\ChangeLog\\LogActionDto.cs",
+              "RelativeToolTip": "ProgramGuard\\Dtos\\ChangeLog\\LogActionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:24:15.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OperateLogController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\OperateLogController.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\OperateLogController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\OperateLogController.cs",
+              "RelativeToolTip": "ProgramGuard\\Controllers\\OperateLogController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:21:07.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ChangeLogController.cs",
               "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\ChangeLogController.cs",
               "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\ChangeLogController.cs",
               "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\ChangeLogController.cs",
               "RelativeToolTip": "ProgramGuard\\Controllers\\ChangeLogController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAIwBIAAAAJAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwFMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T08:45:38.478Z",
+              "WhenOpened": "2024-08-06T00:59:36.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DigitalSignatureHelper.cs",
-              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
-              "ToolTip": "D:\\Home\\ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
-              "RelativeToolTip": "ProgramGuard\\Helper\\DigitalSignatureHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "DocumentIndex": 0,
+              "Title": "ProgramGuardContext.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Data\\ProgramGuardContext.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Data\\ProgramGuardContext.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Data\\ProgramGuardContext.cs",
+              "RelativeToolTip": "ProgramGuard\\Data\\ProgramGuardContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T08:35:38.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileListController.cs",
-              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\FileListController.cs",
-              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\FileListController.cs",
-              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\FileListController.cs",
-              "RelativeToolTip": "ProgramGuard\\Controllers\\FileListController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAFoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T08:33:25.322Z",
+              "WhenOpened": "2024-08-06T00:58:03.366Z",
               "EditorCaption": ""
             }
           ]
@@ -147,12 +278,12 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "69cf7556-93ae-439f-a883-cf28270c40b4",
+        "Id": "2774db8f-494f-412b-ae0e-4edce0b74c58",
         "Display": 0,
-        "X": 177,
-        "Y": 111,
-        "Width": 1532,
-        "Height": 799,
+        "X": 246,
+        "Y": 229,
+        "Width": 1594,
+        "Height": 765,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -162,15 +293,117 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ProgramGuard\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwDYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:02:05.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "3f362c3d-a2b6-4261-bd84-a1cb9660a99c",
+        "Display": 0,
+        "X": 558,
+        "Y": 214,
+        "Width": 1594,
+        "Height": 765,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "ChangeLog.cs",
               "DocumentMoniker": "D:\\Home\\ProgramGuard\\Models\\ChangeLog.cs",
               "RelativeDocumentMoniker": "ProgramGuard\\Models\\ChangeLog.cs",
               "ToolTip": "D:\\Home\\ProgramGuard\\Models\\ChangeLog.cs",
               "RelativeToolTip": "ProgramGuard\\Models\\ChangeLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T08:34:22.893Z",
+              "WhenOpened": "2024-08-06T01:00:57.519Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "95635187-a216-4c3a-beb2-a7bcd0e8cba6",
+        "Display": 0,
+        "X": 790,
+        "Y": 242,
+        "Width": 1594,
+        "Height": 765,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FileListController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Controllers\\FileListController.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Controllers\\FileListController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Controllers\\FileListController.cs",
+              "RelativeToolTip": "ProgramGuard\\Controllers\\FileListController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:21:44.685Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "cc0b17df-855c-424b-81e3-c9756e181485",
+        "Display": 0,
+        "X": 870,
+        "Y": 264,
+        "Width": 1532,
+        "Height": 777,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Home\\ProgramGuard\\Base\\BaseController.cs",
+              "RelativeDocumentMoniker": "ProgramGuard\\Base\\BaseController.cs",
+              "ToolTip": "D:\\Home\\ProgramGuard\\Base\\BaseController.cs",
+              "RelativeToolTip": "ProgramGuard\\Base\\BaseController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAwAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:18:38.257Z",
               "EditorCaption": ""
             }
           ]
