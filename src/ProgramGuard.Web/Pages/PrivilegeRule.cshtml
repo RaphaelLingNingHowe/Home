@@ -1,0 +1,167 @@
+﻿@page
+@using ProgramGuard.Data.Dtos.PrivilegeRule
+@model ProgramGuard.Web.Pages.PrivilegeRuleModel
+@{
+    ViewData["Title"] = "權限管理";
+}
+
+@section Scripts {
+    <script src="~/js/pages/privilege/privilege-ui.js" asp-append-version="true"></script>
+    <script src="~/js/pages/privilege/privilege-events.js" asp-append-version="true"></script>
+    <script src="~/js/pages/privilege/privilege-api.js" asp-append-version="true"></script>
+    <script src="~/js/pages/privilege/privilege-utils.js" asp-append-version="true"></script>
+    <script src="~/js/pages/privilege/privilege-init.js" asp-append-version="true"></script>
+}
+
+<div class="container my-5">
+    <div class="row gx-5">
+        <!-- 左侧控制面板 -->
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-header fs-3">權限管理</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        @(Html.DevExtreme()
+                            .SelectBox()
+                            .ID("selPrivilege")
+                            .DataSource(d => d.RemoteController().LoadUrl("/PrivilegeRule?handler=Data"))
+                            .DisplayExpr("Name")
+                            .OnValueChanged("onPrivilegeSelected")
+                            .SearchEnabled(true)
+                            .Placeholder("權限規則")
+                            .NoDataText("沒有資料")
+                            .ShowClearButton(true))
+                    </div>
+                    <div class="mb-3">
+                        @(Html.DevExtreme()
+                            .Button()
+                            .ID("btnCreate")
+                            .Type(ButtonType.Success)
+                            .Text("新增")
+                            .Width("100%"))
+                    </div>
+                    <div class="mb-3">
+                        @(Html.DevExtreme()
+                            .Button()
+                            .ID("btnUpdate")
+                            .Type(ButtonType.Default)
+                            .Text("編輯")
+                            .Width("100%"))
+                    </div>
+                    <div class="mb-3">
+                        @(Html.DevExtreme()
+                            .Button()
+                            .ID("btnDelete")
+                            .Type(ButtonType.Danger)
+                            .Text("刪除")
+                            .Width("100%"))
+                    </div>
+                    <div class="mt-4">
+                        <label id="lblNotice" class="form-text text-muted">規則調整後，帳號需再次登入後始生效</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card shadow-sm">
+                <div class="card-header fs-3 ">權限設置</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-header fs-5">查閱權限</div>
+                            <div class="card-body">
+                                <div class ="d-grid gap-4" id="visible-privileges-container"></div>
+                            </div> 
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-header fs-5">操作權限</div>
+                            <div class="card-body">
+                                <div class ="d-grid gap-4" id="operate-privileges-container"></div>
+                            </div>                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    @(Html.DevExtreme().Popup()
+        .ID("popupCreateRule")
+        .Width(350)
+        .Height(220)
+        .ShowTitle(true)
+        .Title("新增權限規則")
+        .DragEnabled(false)
+        .ShowCloseButton(false)
+        .HideOnOutsideClick(true)
+        .ContentTemplate(@<text>
+        
+            <div class="mb-3">
+                <label for="UserName" class="form-label">帳號</label>
+                @(
+                Html.DevExtreme().TextBox()
+                .ID("createRuleName")
+                .MaxLength(16)
+                .Placeholder("規則名稱")
+                .ShowClearButton(true)
+                )
+            </div>
+        <div class="dx-field">
+            <div class="dx-field-value">
+                @(Html.DevExtreme().Button()
+                .Text("確定")
+                .Type(ButtonType.Success)
+                .OnClick("createRuleSubmit")
+                )
+            </div>
+        </div>
+    </text>))
+
+    @(Html.DevExtreme().Popup()
+        .ID("popupUpdateRule")
+        .Width(300)
+        .Height(220)
+        .ShowTitle(true)
+        .Title("編輯權限規則")
+        .DragEnabled(false)
+        .ShowCloseButton(false)
+        .HideOnOutsideClick(true)
+        .ContentTemplate(@<text>
+        <div class="dx-field">
+            <span id="updateConfirm"></span>
+            <div class="dx-field-value">
+                @(Html.DevExtreme().Button()
+                .Text("確定")
+                .Type(ButtonType.Success)
+                .OnClick("updateRuleSubmit")
+                )
+            </div>
+        </div>
+    </text>))
+
+    @(Html.DevExtreme().Popup()
+        .ID("popupDeleteRule")
+        .Width(300)
+        .Height(220)
+        .ShowTitle(true)
+        .Title("刪除權限規則")
+        .DragEnabled(false)
+        .ShowCloseButton(false)
+        .HideOnOutsideClick(true)
+        .ContentTemplate(@<text>
+
+        <div class="dx-field">
+            <span id="deleteConfirm"></span>
+            <div class="dx-field-value">
+                @(Html.DevExtreme().Button()
+                .Text("確定")
+                .Type(ButtonType.Danger)
+                .OnClick("deleteRuleSubmit")
+                )
+            </div>
+        </div>
+    </text>))
+</div>

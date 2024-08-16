@@ -1,0 +1,93 @@
+﻿@page
+@model ProgramGuard.Web.Pages.FileListModel
+@using DevExtreme.AspNet.Mvc
+@using ProgramGuard.Data.Dtos.FileList
+@{
+    ViewData["Title"] = "檔案清單";
+}
+
+@section Scripts {
+    <script src="~/js/pages/fileList.js"></script>
+}
+
+<div class="container my-5">
+    <div class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-1">
+                <label for="FilePath" class="form-label">檔案路徑：</label>
+            </div>
+            <div class="col-md-7">
+                @(Html.DevExtreme().TextBox()
+                    .Name("FilePath")
+                    .ID("FilePath")
+                    .Placeholder("輸入檔案路徑")
+                    .OnEnterKey("submitCreateFile")
+                    .Height(40)
+                    )
+            </div>
+            <div class="col-md-2">
+                @(Html.DevExtreme().Button()
+                    .Text("新增")
+                    .Icon("plus")
+                    .Type(ButtonType.Success)
+                    .OnClick("submitCreateFile")
+                    .Width(111)
+                    .Height(40)
+                    )
+            </div>
+        </div>
+    </div>
+
+    <div id="gridContainer" class="grid-container">
+        @(
+            Html.DevExtreme().DataGrid<GetFileListDto>()
+                .DataSource(o => o.RemoteController()
+                .LoadUrl("FileList?Handler=Data")
+                .InsertUrl("FileList")
+                .UpdateUrl("FileList")
+                .DeleteUrl("FileList")
+                .UpdateMethod("Patch")
+                .Key("Id"))
+                .ID("dataGrid")
+                .Columns(columns =>
+                {
+                    columns.AddFor(m => m.Name)
+                    .Caption("檔案名稱")
+                    .AllowEditing(false);
+                    columns.AddFor(m => m.Path)
+                    .Caption("檔案路徑")
+                    .ValidationRules(rules =>
+                    {
+                        rules.AddAsync()
+                            .Message("請輸入有效的檔案路徑")
+                            .Reevaluate(true)
+                            .ValidationCallback("validatePath");
+                    });
+            })
+            .Editing(e =>
+            {
+                e.Mode(GridEditMode.Batch);
+                e.AllowUpdating(true);
+                e.AllowDeleting(true);
+                e.UseIcons(true);
+            })
+            .ShowBorders(true)
+            .ColumnAutoWidth(true)
+            .Selection(o => o.Mode(SelectionMode.Single))
+            .NoDataText("沒有資料")
+            .HoverStateEnabled(true)
+            .FocusedRowEnabled(true)
+            .ColumnHidingEnabled(true)
+            .Paging(paging => paging.PageSize(15))
+            .Pager(pager =>
+            {
+                pager.Visible(true);
+                pager.DisplayMode(GridPagerDisplayMode.Full);
+                pager.ShowPageSizeSelector(true);
+                pager.AllowedPageSizes(new JS("[15, 30, 50, 100, 200]"));
+                pager.ShowInfo(true);
+                pager.ShowNavigationButtons(true);
+            })
+            )
+    </div>
+</div>

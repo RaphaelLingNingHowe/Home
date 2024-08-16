@@ -1,0 +1,207 @@
+﻿@page
+@using ProgramGuard.Data.Dtos.User
+@model ProgramGuard.Web.Pages.UserModel
+@{
+    ViewData["Title"] = "帳號管理";
+}
+
+@section Scripts {
+    <script src="~/js/pages/Users/users-api.js" asp-append-version="true"></script>
+    <script src="~/js/pages/Users/users-ui.js" asp-append-version="true"></script>
+    <script src="~/js/pages/Users/users-events.js" asp-append-version="true"></script>
+}
+
+<div class="container my-5">
+    <div class="row align-items-center mb-2">
+        <div class="col-md-2 fs-3">帳號管理</div>
+        <div class="col-md-1 ms-auto">
+            @(Html.DevExtreme().Button()
+                .Text("新增帳號")
+                .OnClick("showCreateUserPopup")
+                .Type(ButtonType.Success)
+                )
+        </div>
+    </div>
+    <div id="gridContainer">
+        @(
+            Html.DevExtreme().DataGrid<GetUserDto>()
+            .ID("dataGrid")
+            .DataSource(o => o.RemoteController()
+            .LoadUrl("User?Handler=Data")
+            .DeleteUrl("User")
+            .Key("Account"))
+            .Editing(e =>
+            {
+                e.Mode(GridEditMode.Cell);
+                e.AllowUpdating(true);
+                e.AllowDeleting(true);
+                e.UseIcons(true);
+            })
+            .Columns(columns =>
+            {
+                columns.AddFor(m => m.Account)
+                .Caption("帳號")
+                .AllowEditing(false);
+
+                columns.AddFor(m => m.Name)
+                .Caption("顯示名稱")
+                .EditCellTemplate(new JS("nameTemplate"));
+
+                columns.AddFor(m => m.PrivilegeRule)
+                .Caption("權限")
+                .Width(150)
+                .CellTemplate(new JS("privilegeRuleTemplate"))
+                .AllowEditing(false);
+
+                columns.AddFor(m => m.LockoutEnd)
+                .Caption("解鎖時間")
+                .Format("yyyy-MM-dd HH:mm:ss")
+                .EditCellTemplate(new JS("unlockTemplate"));
+
+                columns.AddFor(m => m.IsEnabled)
+                .Caption("帳號啟用")
+                .DataField("IsEnabled")
+                .Width(100)
+                .AllowSorting(false)
+                .AllowEditing(false)
+                .CellTemplate(new JS("isEnabledTemplate"));
+
+                columns.Add()
+                .Caption("重設密碼")
+                .Width(100)
+                .AllowSorting(false)
+                .AllowEditing(false)
+                .CellTemplate(new JS("resetPasswordTemplate"));
+            })
+            .ShowBorders(true)
+            .ColumnAutoWidth(true)
+            .Selection(o => o.Mode(SelectionMode.Single))
+            .NoDataText("沒有資料")
+            .HoverStateEnabled(true)
+            .FocusedRowEnabled(true)
+            .Paging(paging => paging.PageSize(15))
+            .Pager(pager =>
+            {
+                pager.Visible(true);
+                pager.DisplayMode(GridPagerDisplayMode.Full);
+                pager.ShowPageSizeSelector(true);
+                pager.AllowedPageSizes(new JS("[15, 30, 50, 100, 200]"));
+                pager.ShowInfo(true);
+                pager.ShowNavigationButtons(true);
+            })
+            )
+    </div>
+</div>
+
+@* Popups *@
+@(Html.DevExtreme().Popup()
+    .ID("popupCreateUser")
+    .Width(350)
+    .Height(300)
+    .ShowTitle(true)
+    .Title("新增帳號")
+    .DragEnabled(false)
+    .HideOnOutsideClick(true)
+    .ShowCloseButton(true)
+    .Position(p => p.At(HorizontalAlignment.Center, VerticalAlignment.Center).My(HorizontalAlignment.Center, VerticalAlignment.Center))
+    .ContentTemplate(@<text>
+    <div class="mb-3">
+        <label for="txtAccount" class="form-label">帳號</label>
+        @(Html.DevExtreme().TextBox()
+        .ID("txtAccount")
+        .Placeholder("請輸入帳號")
+        )
+    </div>
+
+    <div class="mb-3">
+        <label for="txtName" class="form-label">名稱</label>
+        @(Html.DevExtreme().TextBox()
+        .ID("txtName")
+        .Placeholder("請輸入名稱")
+        )
+    </div>
+
+    <div class="mb-3">
+        <label for="txtPassword" class="form-label">密碼</label>
+        @(Html.DevExtreme().TextBox()
+        .ID("txtPassword")
+        .Mode(TextBoxMode.Password)
+        .InputAttr("aria-label", "Password")
+        .Placeholder("請輸入密碼")
+        .ShowClearButton(true)
+        .Buttons(buttons => {
+        buttons.Add()
+        .Name("password")
+        .Location(TextEditorButtonLocation.After)
+        .Widget(w => w.Button()
+        .StylingMode(ButtonStylingMode.Text)
+        .Icon("eyeopen")
+        .OnClick("() => changePasswordMode('Password')"));
+        })
+        )
+    </div>
+    <div class="mb-3">
+        <label for="selPrivilegeRule" class="form-label">帳號權限</label>
+        @(Html.DevExtreme()
+        .SelectBox()
+        .ID("selPrivilegeRule")
+        .DataSource(d => d.RemoteController().LoadUrl("/PrivilegeRule?handler=Data"))
+        .DisplayExpr("Name")
+        .SearchEnabled(true)
+        .Placeholder("權限規則")
+        .NoDataText("沒有資料")
+        .ShowClearButton(true))
+    </div>
+    <div class="d-grid mt-4">
+        @(Html.DevExtreme().Button()
+        .Text("確定")
+        .Type(ButtonType.Success)
+        .OnClick("submitCreateUser")
+        )
+    </div>
+</text>)
+)
+
+@(Html.DevExtreme().Popup()
+    .ID("popupResetPassword")
+    .Width(350)
+    .Height(220)
+    .ShowTitle(true)
+    .Title("重置密碼")
+    .DragEnabled(false)
+    .HideOnOutsideClick(true)
+    .ShowCloseButton(true)
+    .Position(positionConfig => positionConfig
+        .At(HorizontalAlignment.Center, VerticalAlignment.Center)
+        .My(HorizontalAlignment.Center, VerticalAlignment.Center)
+    )
+    .ContentTemplate(@<text>
+    <div class="mb-3">
+        <label for="resetPassword" class="form-label">重置新密碼</label>
+        @(Html.DevExtreme().TextBoxFor(m => m.ResetPasswordDto.Password)
+        .ID("resetPassword")
+        .Mode(TextBoxMode.Password)
+        .InputAttr("aria-label", "Password")
+        .OnEnterKey("submitResetPassword")
+        .Placeholder("重置新密碼")
+        .ShowClearButton(true)
+        .Buttons(buttons => {
+        buttons.Add()
+        .Name("password")
+        .Location(TextEditorButtonLocation.After)
+        .Widget(w => w.Button()
+        .StylingMode(ButtonStylingMode.Text)
+        .Icon("eyeopen")
+        .OnClick("() => changePasswordMode('Password')"));
+        })
+        )
+    </div>
+    <div class="d-grid mt-4">
+        @(Html.DevExtreme().Button()
+        .Text("確定")
+        .Type(ButtonType.Success)
+        .OnClick("submitResetPassword")
+        )
+    </div>
+</text>)
+)

@@ -1,0 +1,113 @@
+﻿@inject ProgramGuard.Web.Pages.ChangePasswordModel ChangePasswordModel
+@using System.Security.Claims
+@using ProgramGuard.Enums
+
+@{
+    string? GetClaimValue(string claimType)
+    {
+        return User.Claims.FirstOrDefault(c => c.Type == claimType)?.Value;
+    }
+
+    string? userName = GetClaimValue("name");
+    string? userAccount = GetClaimValue("sub");
+
+    var pagePath = ViewContext.RouteData.Values["page"]?.ToString() ?? string.Empty;
+
+    VISIBLE_PRIVILEGE visiblePrivilege = VISIBLE_PRIVILEGE.UNKNOWN;
+    if (User.Claims.FirstOrDefault(c => c.Type == "visiblePrivilege") is Claim rawVisiblePrivilege)
+    {
+        visiblePrivilege = (VISIBLE_PRIVILEGE)uint.Parse(rawVisiblePrivilege.Value);
+    }
+
+    OPERATE_PRIVILEGE operatePrivilege = OPERATE_PRIVILEGE.UNKNOWN;
+    if (User.Claims.FirstOrDefault(c => c.Type == "operatePrivilege") is Claim rawOperatePrivilege)
+    {
+        operatePrivilege = (OPERATE_PRIVILEGE)uint.Parse(rawOperatePrivilege.Value);
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ProgramGuard</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="~/css/devextreme/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/devextreme/dx.light.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/Site.css" asp-append-version="true" />
+    <script src="~/js/devextreme/jquery.js"></script>
+    <script src="~/js/devextreme/popper.min.js"></script>
+    <script src="~/js/devextreme/bootstrap.js"></script>
+    <script src="~/js/devextreme/dx.all.js"></script>
+    <script src="~/js/devextreme/aspnet/dx.aspnet.mvc.js"></script>
+    <script src="~/js/devextreme/aspnet/dx.aspnet.data.js"></script>
+    <script src="~/js/utils/fetchData.js" asp-append-version="true"></script>
+    <script src="~/js/utils/helper.js" asp-append-version="true"></script>
+    <script src="~/js/utils/setupCsrfToken.js" asp-append-version="true"></script>
+    <script src="~/js/pages/changePassword.js" asp-append-version="true"></script>
+</head>
+
+<body style="padding-top: 5rem;">
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">ProgramGuard</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            @if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                <label hidden id="hiddenAccount">@userAccount</label>
+                if (!pagePath.Contains("Login"))
+                {
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a href="/FileList" class="nav-link active">檔案清單</a></li>
+                            <li class="nav-item"><a href="/ChangeLog" class="nav-link">異動記錄</a></li>
+                            @if ((visiblePrivilege & (VISIBLE_PRIVILEGE.SHOW_USER | VISIBLE_PRIVILEGE.SHOW_PRIVILEGE_RULE | VISIBLE_PRIVILEGE.SHOW_OPERATELOG)) != 0)
+                            {
+                                <li class="nav-item"><a href="/OperateLog" class="nav-link">操作記錄</a></li>
+                                <li class="nav-item"><a href="/User" class="nav-link">帳號管理</a></li>
+                                <li class="nav-item"><a href="/PrivilegeRule" class="nav-link">權限管理</a></li>
+                            }
+                        </ul>
+                        <ul class="navbar-nav me-2">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @userName
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="#" id="navChangePassword">更換密碼</a></li>
+                                    <li>
+                                        <form id="logoutForm" method="post" asp-page="/Logout">
+                                            <button type="submit" class="dropdown-item" id="navLogout">登出</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                }
+            }
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        @Html.AntiForgeryToken()
+        @RenderBody()
+    </main>
+
+    <div id="popupChangePassword" style="display:none;">
+        @await Html.PartialAsync("_ChangePasswordPartial", ChangePasswordModel)
+    </div>
+        @* Add this section *@
+        @RenderSection("Scripts", required: false)
+</body>
+
+</html>
